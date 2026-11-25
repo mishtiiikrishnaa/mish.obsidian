@@ -65,6 +65,10 @@ python3 -m http.server 8000
 
 then open <http://localhost:8000>. or just open `docs/index.html`.
 
+## fonts
+
+the site uses cascadia code (microsoft, sil ofl 1.1, see [`docs/fonts/OFL.txt`](docs/fonts/OFL.txt)) for the windows terminal look, and the mish cm typewriter / serif faces from mish.shell for everything that should feel like the plugins.
+
 ## licence
 
 mit. each plugin repo carries its own copy.

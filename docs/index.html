@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mish — a terminal for your notes</title>
+<meta name="description" content="the mish suite: a terminal-inspired obsidian theme and eight plugins. same pastel rainbow, same typewriter feel.">
+<meta property="og:title" content="mish — a terminal for your notes">
+<meta property="og:description" content="a terminal-inspired obsidian theme and eight plugins. same pastel rainbow, same typewriter feel.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mishtiiikrishnaa.github.io/mish.obsidian/">
+<meta name="theme-color" content="#0f0f12">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">skip to content</a>
+
+<header class="topbar">
+  <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="crumbs" aria-label="breadcrumb">
+    <span class="crumb-user">mishti</span>
+    <span class="crumb-path">~/obsidian</span>
+    <span class="crumb-chev">❯</span>
+    <span class="crumb-here">mish</span>
+  </div>
+  <div class="topbar-actions">
+    <a class="top-link" href="https://github.com/mishtiiikrishnaa/mish.obsidian" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="toggle light and dark mode" title="toggle light and dark mode">
+      <span class="toggle-track"><span class="toggle-dot"></span></span>
+      <span class="toggle-label">dark</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="powerline" aria-hidden="true">
+        <span class="seg seg-user">mishti</span>
+        <span class="seg seg-path">~/obsidian</span>
+        <span class="seg seg-plugins">9 packages</span>
+        <span class="seg seg-clock" id="clock">--:--</span>
+      </div>
+
+      <p class="eyebrow"><span class="prompt-chev">❯</span> cat readme.md</p>
+      <h1>a terminal for<br><span class="rainbow-text">your notes.</span></h1>
+      <p class="lede">obsidian, rebuilt with the manners of a shell. one theme and eight plugins that share a palette, a typewriter, and an unreasonable fondness for powerline prompts.</p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#plugins"><span aria-hidden="true">❯</span> browse the suite</a>
+        <a class="button" href="#install"><span aria-hidden="true">↓</span> install</a>
+      </div>
+
+      <dl class="hero-stats">
+        <div><dt>theme</dt><dd>1</dd></div>
+        <div><dt>plugins</dt><dd>8</dd></div>
+        <div><dt>network calls</dt><dd>0</dd></div>
+        <div><dt>pastels</dt><dd>6</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-window" aria-label="a fastfetch-style summary of the suite">
+      <div class="window-bar">
+        <span class="traffic small" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="window-title">mishti@macbook: ~/obsidian</span>
+        <span class="window-dim">zsh</span>
+      </div>
+      <div class="window-body">
+        <div class="prompt-line">
+          <span class="seg seg-user">mishti</span><span class="seg seg-path">~/obsidian</span><span class="seg seg-git">main</span>
+          <span class="prompt-chev">❯</span><span class="typed">fastfetch</span><span class="caret" aria-hidden="true"></span>
+        </div>
+        <pre class="fetch"><span class="fetch-logo" aria-hidden="true">      ▄▄▄▄▄▄
+   ▄▄████████▄▄
+  ██████████████
+ ████████████████
+ ████  ████  ████
+ ████████████████
+  ██████████████
+   ▀▀████████▀▀
+      ▀▀▀▀▀▀</span><span class="fetch-list"><span class="fl"><b>user</b>      mishti@macbook</span><span class="fl"><b>os</b>        macOS · obsidian</span><span class="fl"><b>theme</b>     <span class="c-pink">mish.shell</span> 1.7.45</span><span class="fl"><b>plugins</b>   <span class="c-peach">mish.home</span> · <span class="c-yellow">mish.eza</span> · <span class="c-green">mish.fastfetch</span></span><span class="fl"><b>links</b>     <span class="c-blue">mish.backlinks</span> · <span class="c-lilac">mish.outlinks</span> · <span class="c-cyan">mish.music</span></span><span class="fl"><b>dates</b>     <span class="c-yellow">mish.calendar</span> · <span class="c-green">mish.localgraph</span></span><span class="fl"><b>palette</b>   <span class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span class="fl"><b>uptime</b>    since the first prompt</span></span></pre>
+        <div class="rainbow-rule" aria-hidden="true"></div>
+        <div class="prompt-line prompt-bottom">
+          <span class="prompt-chev">❯</span><span class="typed">ls plugins</span><span class="caret" aria-hidden="true"></span>
+        </div>
+        <p class="ls-out"><span class="c-pink">mish.home/</span>  <span class="c-peach">mish.eza/</span>  <span class="c-yellow">mish.fastfetch/</span>  <span class="c-green">mish.backlinks/</span>  <span class="c-blue">mish.outlinks/</span>  <span class="c-lilac">mish.music/</span>  <span class="c-cyan">mish.calendar/</span>  <span class="c-pink">mish.localgraph/</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="suite" id="plugins">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow"><span class="prompt-chev">❯</span> ls ./plugins</p>
+        <h2>the suite</h2>
+      </div>
+      <p class="section-note">eight plugins, one theme, zero opinions about your vault.</p>
+    </div>
+
+    <div class="controls" role="group" aria-label="filter plugins">
+      <div class="tabs" id="filters">
+        <button type="button" class="tab is-active" data-filter="all" aria-pressed="true">all <span>9</span></button>
+        <button type="button" class="tab" data-filter="theme" aria-pressed="false">theme <span>1</span></button>
+        <button type="button" class="tab" data-filter="plugin" aria-pressed="false">plugins <span>8</span></button>
+      </div>
+      <label class="search">
+        <span aria-hidden="true">❯</span>
+        <input id="search" type="search" placeholder="grep…" aria-label="search plugins" autocomplete="off" spellcheck="false">
+        <kbd>/</kbd>
+      </label>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <article class="card is-theme" id="mish-shell" data-kind="theme" data-name="mish.shell theme terminal ui rainbow" style="--c:var(--pink)">
+        <div class="card-top"><span class="kind">theme</span><span class="version">v1.7.45</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.shell" target="_blank" rel="noopener">mish.shell</a></h3>
+        <p class="desc">the terminal edition of obsidian. lowercase interface, powerline prompts, rainbow trim, and fonts bundled so nothing needs installing.</p>
+        <ul class="features">
+          <li>terminal, powerline, tmux and vim tab bars</li>
+          <li>rainbow gradients, links, tags, headings and callouts</li>
+          <li>themed cursors, typing carets and startup motion</li>
+          <li>style settings for fonts, colours and almost everything else</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.shell" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.shell.git .obsidian/themes/mish.shell">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-home" data-kind="plugin" data-name="mish.home dashboard clock weather todo terminal" style="--c:var(--peach)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.3.6</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.home" target="_blank" rel="noopener">mish.home</a></h3>
+        <p class="desc">the page you open obsidian to. a shared dashboard, separate usage time for each vault, and no scrolling. ever.</p>
+        <ul class="features">
+          <li>block-letter clock, weather, todos, countdowns and a focus timer</li>
+          <li>a real little terminal with autosuggestions and tab completion</li>
+          <li>system stats, shortcuts, recent notes and a streak grid</li>
+          <li>every section optional and themeable</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.home" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.home.git .obsidian/plugins/mish-home">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-eza" data-kind="plugin" data-name="mish.eza file explorer tree shell" style="--c:var(--yellow)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.1</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.eza" target="_blank" rel="noopener">mish.eza</a></h3>
+        <p class="desc">your file explorer as <code>eza --tree</code> under a starship prompt. the sidebar you stare at all day, rebuilt as a terminal.</p>
+        <ul class="features">
+          <li>real tree lines, one colour per depth, fold and open by click</li>
+          <li><code>touch</code>, <code>mkdir</code>, <code>rename</code>, <code>mv</code>, <code>cp</code>, <code>rm</code> and more</li>
+          <li>tab completion, history, syntax colouring and a built-in <code>help</code></li>
+          <li><code>rm</code> asks first, then uses the system trash. reveal pills find the open note</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.eza" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.eza.git .obsidian/plugins/mish-eza">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-fastfetch" data-kind="plugin" data-name="mish.fastfetch stats sidebar vault counts" style="--c:var(--green)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.0</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.fastfetch" target="_blank" rel="noopener">mish.fastfetch</a></h3>
+        <p class="desc">a starship prompt and a fastfetch summary of your vault, living in the sidebar. numbers are real; nothing is ever executed.</p>
+        <ul class="features">
+          <li>notes, links, folders, files, size and a ticking uptime</li>
+          <li>counts refresh on file changes and every fifteen seconds</li>
+          <li>palette follows the theme in light and dark mode</li>
+          <li>eight presets, three pill shapes, a card you can reshape</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.fastfetch" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.fastfetch.git .obsidian/plugins/mish-fastfetch">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-backlinks" data-kind="plugin" data-name="mish.backlinks backlinks pane mentions" style="--c:var(--blue)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.0</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.backlinks" target="_blank" rel="noopener">mish.backlinks</a></h3>
+        <p class="desc">a backlinks pane styled like a terminal: starship prompt, eza-style tree with context lines, and a tiny command line.</p>
+        <ul class="features">
+          <li>incoming links as a coloured, foldable tree</li>
+          <li>context lines so you know why a note is here</li>
+          <li>a small command line for moving around the pane</li>
+          <li>an unlinked-mentions tab for the notes that almost link back</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.backlinks" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.backlinks.git .obsidian/plugins/mish-backlinks">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-outlinks" data-kind="plugin" data-name="mish.outlinks outgoing links pane" style="--c:var(--lilac)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.0</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.outlinks" target="_blank" rel="noopener">mish.outlinks</a></h3>
+        <p class="desc">the forward-links pane, dressed the same way. every note this one points at, read like shell output.</p>
+        <ul class="features">
+          <li>outgoing links as an eza-style tree</li>
+          <li>starship prompt and terminal controls</li>
+          <li>a tiny command line and keyboard navigation</li>
+          <li>the same look as mish.backlinks, for the other direction</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.outlinks" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.outlinks.git .obsidian/plugins/mish-outlinks">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-music" data-kind="plugin" data-name="mish.music now playing macos music safari player" style="--c:var(--cyan)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.0</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.music" target="_blank" rel="noopener">mish.music</a></h3>
+        <p class="desc">a starship-style now-playing card for the sidebar. controls Music.app or a Safari tab, with seek, shuffle, repeat and system volume.</p>
+        <ul class="features">
+          <li>a cover-art player or a typeable mpv-style terminal</li>
+          <li>Music.app and Safari: youtube, soundcloud, jiosaavn and friends</li>
+          <li><code>play</code>, <code>seek 1:30</code>, <code>vol 40</code> and other commands</li>
+          <li>macOS only, because it talks to your mac through <code>osascript</code></li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.music" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.music.git .obsidian/plugins/mish-music">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-calendar" data-kind="plugin" data-name="mish.calendar dates month calendar notes created" style="--c:var(--pink)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.2</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.calendar" target="_blank" rel="noopener">mish.calendar</a></h3>
+        <p class="desc">a powerline calendar of notes by the dates you already write in them, with daily counts and a browsable note list.</p>
+        <ul class="features">
+          <li>reads <code>created</code>, <code>date</code> or properties you choose</li>
+          <li>month grid, note counts, totals and undated notes</li>
+          <li>tracks extra date properties, so one note can appear twice</li>
+          <li>arrow keys, page up/down, today and cmd-click to open</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.calendar" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.calendar.git .obsidian/plugins/mish-calendar">copy install</button>
+        </div>
+      </article>
+
+      <article class="card" id="mish-localgraph" data-kind="plugin" data-name="mish.localgraph graph local links rainbow" style="--c:var(--peach)">
+        <div class="card-top"><span class="kind">plugin</span><span class="version">v1.0.0</span></div>
+        <h3><a href="https://github.com/mishtiiikrishnaa/mish.localgraph" target="_blank" rel="noopener">mish.localgraph</a></h3>
+        <p class="desc">obsidian's built-in local graph, dressed in the mish look: rainbow ring, powerline prompt, terminal-style controls.</p>
+        <ul class="features">
+          <li>a prompt with the note name and live <code>→out ←in</code> counts</li>
+          <li>lilac notes, pink focus, peach highlights, green tags, blue attachments</li>
+          <li>the native graph controls hide behind the prompt's graph icon</li>
+          <li>public api only. it borrows the theme's colours and falls back gracefully</li>
+        </ul>
+        <div class="card-foot">
+          <a class="card-link" href="https://github.com/mishtiiikrishnaa/mish.localgraph" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
+          <button class="copy" type="button" data-copy="git clone https://github.com/mishtiiikrishnaa/mish.localgraph.git .obsidian/plugins/mish-localgraph">copy install</button>
+        </div>
+      </article>
+
+    </div>
+    <p class="empty-state" id="empty-state" hidden>no matches. try fewer letters, or a different word entirely.</p>
+  </section>
+
+  <section class="install" id="install">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow"><span class="prompt-chev">❯</span> cat install.txt</p>
+        <h2>install</h2>
+      </div>
+      <p class="section-note">community plugins, or a clone and a reload. no build step, no package manager.</p>
+    </div>
+
+    <div class="install-grid">
+      <div class="install-card">
+        <div class="install-head"><span class="num">01</span><h3>the theme</h3></div>
+        <p>drop <code>theme.css</code> and <code>manifest.json</code> into <code>&lt;vault&gt;/.obsidian/themes/mish.shell/</code>, then pick <strong>mish.shell</strong> in settings → appearance → themes.</p>
+        <p class="muted">install <strong>style settings</strong> if you want the font, colour and cursor controls. the theme looks right without it.</p>
+      </div>
+      <div class="install-card">
+        <div class="install-head"><span class="num">02</span><h3>the plugins</h3></div>
+        <p>download <code>main.js</code>, <code>manifest.json</code> and <code>styles.css</code> from a release, or clone a repo into <code>&lt;vault&gt;/.obsidian/plugins/&lt;id&gt;/</code>. reload obsidian and switch it on.</p>
+        <p class="muted">BRAT works too: add <code>mishtiiikrishnaa/mish.eza</code>, and so on, as a beta plugin.</p>
+      </div>
+      <div class="install-card">
+        <div class="install-head"><span class="num">03</span><h3>the manners</h3></div>
+        <p>keep settings → appearance → fonts empty so the bundled fonts win. install the whole suite for the full effect; each piece works alone.</p>
+        <p class="muted">desktop only, except where obsidian itself insists otherwise. no network calls, no telemetry, no system commands beyond the ones you type.</p>
+      </div>
+    </div>
+
+    <div class="shell-card">
+      <div class="shell-head">
+        <span class="traffic small" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>mish shell — try it</span>
+        <button class="shell-clear" id="shell-clear" type="button">clear</button>
+      </div>
+      <div class="shell-body" id="shell" tabindex="0" role="log" aria-label="interactive mish shell" aria-live="polite">
+        <div class="shell-line"><span class="prompt-chev">❯</span><span class="muted">type <b>help</b> and press enter. tab completes. up and down remember.</span></div>
+      </div>
+      <form class="shell-form" id="shell-form" autocomplete="off">
+        <label class="shell-prompt" for="shell-input"><span class="seg seg-user">mishti</span><span class="seg seg-path">~/obsidian</span><span class="prompt-chev">❯</span></label>
+        <input id="shell-input" name="command" type="text" spellcheck="false" autocapitalize="off" aria-label="shell command">
+        <span class="shell-caret" aria-hidden="true"></span>
+      </form>
+    </div>
+  </section>
+
+  <section class="palette-section" aria-labelledby="palette-heading">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow"><span class="prompt-chev">❯</span> palette --show</p>
+        <h2 id="palette-heading">the palette</h2>
+      </div>
+      <p class="section-note">six pastels, mixed in oklab so the rainbow never goes dull in the middle.</p>
+    </div>
+    <div class="palette">
+      <button type="button" class="swatch-card" data-hex="#ffa6c9"><span class="swatch-chip" style="--sw:#ffa6c9"></span><span class="swatch-name">pink</span><code>#ffa6c9</code></button>
+      <button type="button" class="swatch-card" data-hex="#ffd6a6"><span class="swatch-chip" style="--sw:#ffd6a6"></span><span class="swatch-name">peach</span><code>#ffd6a6</code></button>
+      <button type="button" class="swatch-card" data-hex="#fff1a8"><span class="swatch-chip" style="--sw:#fff1a8"></span><span class="swatch-name">yellow</span><code>#fff1a8</code></button>
+      <button type="button" class="swatch-card" data-hex="#c9ffa6"><span class="swatch-chip" style="--sw:#c9ffa6"></span><span class="swatch-name">green</span><code>#c9ffa6</code></button>
+      <button type="button" class="swatch-card" data-hex="#a6c9ff"><span class="swatch-chip" style="--sw:#a6c9ff"></span><span class="swatch-name">blue</span><code>#a6c9ff</code></button>
+      <button type="button" class="swatch-card" data-hex="#c9b0ff"><span class="swatch-chip" style="--sw:#c9b0ff"></span><span class="swatch-name">lilac</span><code>#c9b0ff</code></button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-prompt">
+      <span class="seg seg-user">mishti</span><span class="seg seg-path">~/obsidian</span><span class="prompt-chev">❯</span><span class="caret" aria-hidden="true"></span>
+    </div>
+    <p>made by <a href="https://github.com/mishtiiikrishnaa" target="_blank" rel="noopener">mishti</a>. theme and plugins are mit licensed. this page is static, local and unbothered by analytics.</p>
+    <div class="footer-links">
+      <a href="https://github.com/mishtiiikrishnaa/mish.obsidian" target="_blank" rel="noopener">source</a>
+      <a href="https://github.com/mishtiiikrishnaa" target="_blank" rel="noopener">github</a>
+      <a href="#plugins">plugins</a>
+      <a href="#install">install</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

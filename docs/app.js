@@ -178,7 +178,7 @@
     { name: "mish.calendar", id: "mish-calendar", kind: "plugin", repo: "mish.calendar" },
     { name: "mish.localgraph", id: "mish-localgraph", kind: "plugin", repo: "mish.localgraph" }
   ];
-  var commands = ["get-help", "get-childitem", "get-date", "get-location", "clear-host", "ls", "dir", "pwd", "cls", "plugins", "open", "theme", "palette", "fastfetch", "whoami", "date", "cat", "github", "install", "echo", "clear"];
+  var commands = ["help", "ls", "plugins", "open", "theme", "palette", "fastfetch", "whoami", "date", "cat", "github", "install", "echo", "clear"];
 
   function escape(text) {
     return String(text).replace(/[&<>"']/g, function (ch) {
@@ -199,7 +199,7 @@
   }
 
   function echoCommand(raw) {
-    line('<span class="ps-inline">PS</span><span class="win-path">C:\\Users\\mishti\\obsidian</span><span class="gt">&gt;</span><span class="cmd">' + escape(raw) + "</span>");
+    line('<span class="prompt-chev">❯</span><span class="cmd">' + escape(raw) + "</span>");
   }
 
   function findPlugin(name) {
@@ -213,23 +213,21 @@
 
   var handlers = {
     help: function () {
-      out("powershell aliases:");
-      out("  get-help             this page");
-      out("  get-childitem        list the suite (ls, dir, gci)");
-      out("  get-location         where you are (pwd, gl)");
-      out("  get-date             the obvious thing");
-      out("  clear-host           tidy the screen (clear, cls)");
+      out("available commands:");
+      out("  help                 this page");
+      out("  ls / plugins         list the suite");
       out("  open <name>          jump to a plugin card");
       out("  install <name>       print an install command");
       out("  theme [light|dark]   change the lights");
       out("  palette              the six pastels");
       out("  fastfetch            a summary of the suite");
+      out("  whoami / date        the obvious things");
       out("  cat readme.md        the short version");
       out("  github               open the source");
       out("  echo <text>          say it back");
+      out("  clear                tidy the screen");
       out("tab completes, up and down remember.");
     },
-    pwd: function () { out("C:\\Users\\mishti\\obsidian"); },
     ls: function (args) {
       var target = (args[0] || "").toLowerCase();
       if (target && target !== "plugins" && target !== "~/obsidian") {
@@ -312,36 +310,15 @@
     var parts = text.split(/\s+/);
     var name = parts[0].toLowerCase();
     var args = parts.slice(1);
-    var aliases = {
-      "get-help": "help",
-      "get-childitem": "ls",
-      "gci": "ls",
-      "dir": "ls",
-      "get-date": "date",
-      "get-location": "pwd",
-      "gl": "pwd",
-      "clear-host": "clear",
-      "cls": "clear"
-    };
-    name = aliases[name] || name;
 
-    if (name === "$psversiontable") {
-      out("Name                           Value");
-      out("----                           -----");
-      out("PSVersion                      7.4.6");
-      out("PSEdition                      Core");
-      out("OS                             macOS 15.1.0");
-      out("Platform                       Unix");
-      return;
-    }
     if (name === "sudo") { out("nice try. this is a website, not a liability.", "err"); return; }
     if (name === "rm") { out("nothing here is yours to delete. emotionally speaking.", "err"); return; }
     if (name === "exit" || name === "quit") { out("there is no exit. only esc."); return; }
 
     var handler = handlers[name];
     if (!handler) {
-      out("The term '" + parts[0] + "' is not recognized as a name of a cmdlet, function, script file, or executable program.", "err");
-      out("Check the spelling of the name, or type get-help.");
+      out("zsh: command not found: " + parts[0], "err");
+      out("type help, or use the buttons like a civilised person.");
       return;
     }
     handler(args);

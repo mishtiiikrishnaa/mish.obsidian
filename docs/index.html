@@ -9,7 +9,7 @@
 <meta property="og:description" content="a terminal-inspired obsidian theme and eight plugins. same pastel rainbow, same typewriter feel.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mishtiiikrishnaa.github.io/mish.obsidian/">
-<meta name="theme-color" content="#0c0c0d">
+<meta name="theme-color" content="#0f0f12">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
@@ -18,15 +18,12 @@
 <a class="skip" href="#main">skip to content</a>
 
 <header class="topbar">
-  <div class="win-brand">
-    <span class="ps-badge" aria-hidden="true">PS</span>
-    <span class="win-title">mish.obsidian</span>
-    <span class="win-sub">— Windows PowerShell</span>
-  </div>
-  <div class="term-tabs" aria-hidden="true">
-    <span class="term-tab is-active"><span class="tab-icon">❯_</span> powershell</span>
-    <span class="term-tab">the suite</span>
-    <span class="term-tab-add">+</span>
+  <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="crumbs" aria-label="breadcrumb">
+    <span class="crumb-user">mishti</span>
+    <span class="crumb-path">~/obsidian</span>
+    <span class="crumb-chev">❯</span>
+    <span class="crumb-here">mish</span>
   </div>
   <div class="topbar-actions">
     <a class="top-link" href="https://github.com/mishtiiikrishnaa/mish.obsidian" target="_blank" rel="noopener">github <span aria-hidden="true">↗</span></a>
@@ -34,7 +31,6 @@
       <span class="toggle-track"><span class="toggle-dot"></span></span>
       <span class="toggle-label">dark</span>
     </button>
-    <span class="win-caption" aria-hidden="true"><span>—</span><span>▢</span><span>✕</span></span>
   </div>
 </header>
 
@@ -42,51 +38,52 @@
   <section class="hero">
     <div class="hero-copy">
       <div class="powerline" aria-hidden="true">
-        <span class="seg seg-ps">PS</span>
-        <span class="seg seg-path">C:\Users\mishti</span>
-        <span class="seg seg-plugins">9 packages <b>9</b></span>
+        <span class="seg seg-user">mishti</span>
+        <span class="seg seg-path">~/obsidian</span>
+        <span class="seg seg-plugins">9 packages</span>
         <span class="seg seg-clock" id="clock">--:--</span>
       </div>
 
-      <p class="eyebrow"><span class="ps-inline">PS</span> <span class="eyebrow-path">C:\Users\mishti\obsidian</span><span class="gt">&gt;</span> cat readme.md</p>
+      <p class="eyebrow"><span class="prompt-chev">❯</span> cat readme.md</p>
       <h1>a terminal for<br><span class="rainbow-text">your notes.</span></h1>
-      <p class="lede">obsidian, rebuilt with the manners of a shell. one theme and eight plugins that share a palette, a prompt, and an unreasonable fondness for powerline pills.</p>
+      <p class="lede">obsidian, rebuilt with the manners of a shell. one theme and eight plugins that share a palette, a typewriter, and an unreasonable fondness for powerline prompts.</p>
 
       <div class="hero-actions">
         <a class="button button-primary" href="#plugins"><span aria-hidden="true">❯</span> browse the suite</a>
         <a class="button" href="#install"><span aria-hidden="true">↓</span> install</a>
       </div>
 
-      <div class="metrics" aria-label="the suite in numbers">
-        <div class="metric">
-          <span class="ring" style="--pct:100;--ring:var(--pink)"><i>9/9</i></span>
-          <span class="metric-pill p-pink">packages <b>9</b></span>
-        </div>
-        <div class="metric">
-          <span class="ring" style="--pct:100;--ring:var(--lilac)"><i>6/6</i></span>
-          <span class="metric-pill p-lilac">pastels <b>6</b></span>
-        </div>
-        <div class="metric">
-          <span class="ring" style="--pct:0;--ring:var(--yellow)"><i>0</i></span>
-          <span class="metric-pill p-yellow">network calls <b>0</b></span>
-        </div>
-      </div>
+      <dl class="hero-stats">
+        <div><dt>theme</dt><dd>1</dd></div>
+        <div><dt>plugins</dt><dd>8</dd></div>
+        <div><dt>network calls</dt><dd>0</dd></div>
+        <div><dt>pastels</dt><dd>6</dd></div>
+      </dl>
     </div>
 
     <div class="hero-window" aria-label="a fastfetch-style summary of the suite">
       <div class="window-bar">
-        <span class="term-tab is-active"><span class="ps-badge tiny" aria-hidden="true">PS</span> Windows PowerShell</span>
-        <span class="term-tab">mish.suite</span>
-        <span class="window-dim">— ▢ ✕</span>
+        <span class="traffic small" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="window-title">mishti@macbook: ~/obsidian</span>
+        <span class="window-dim">zsh</span>
       </div>
       <div class="window-body">
         <div class="prompt-line">
-          <span class="ps-badge" aria-hidden="true">PS</span><span class="win-path">C:\Users\mishti\obsidian</span><span class="gt">&gt;</span><span class="typed">fastfetch</span><span class="caret" aria-hidden="true"></span>
+          <span class="seg seg-user">mishti</span><span class="seg seg-path">~/obsidian</span><span class="seg seg-git">main</span>
+          <span class="prompt-chev">❯</span><span class="typed">fastfetch</span><span class="caret" aria-hidden="true"></span>
         </div>
-        <pre class="fetch"><span class="win-logo" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="fetch-list"><span class="fl"><b>user</b>      mishti@macbook</span><span class="fl"><b>os</b>        macOS · obsidian</span><span class="fl"><b>theme</b>     <span class="c-pink">mish.shell</span> 1.7.45</span><span class="fl"><b>plugins</b>   <span class="c-peach">mish.home</span> · <span class="c-yellow">mish.eza</span></span><span class="fl"><b></b>          <span class="c-green">mish.fastfetch</span> · <span class="c-blue">mish.backlinks</span></span><span class="fl"><b>links</b>     <span class="c-lilac">mish.outlinks</span> · <span class="c-cyan">mish.music</span></span><span class="fl"><b>dates</b>     <span class="c-yellow">mish.calendar</span> · <span class="c-green">mish.localgraph</span></span><span class="fl"><b>palette</b>   <span class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span class="fl"><b>uptime</b>    since the first prompt</span></span></pre>
+        <pre class="fetch"><span class="fetch-logo" aria-hidden="true">      ▄▄▄▄▄▄
+   ▄▄████████▄▄
+  ██████████████
+ ████████████████
+ ████  ████  ████
+ ████████████████
+  ██████████████
+   ▀▀████████▀▀
+      ▀▀▀▀▀▀</span><span class="fetch-list"><span class="fl"><b>user</b>      mishti@macbook</span><span class="fl"><b>os</b>        macOS · obsidian</span><span class="fl"><b>theme</b>     <span class="c-pink">mish.shell</span> 1.7.45</span><span class="fl"><b>plugins</b>   <span class="c-peach">mish.home</span> · <span class="c-yellow">mish.eza</span></span><span class="fl"><b></b>          <span class="c-green">mish.fastfetch</span> · <span class="c-blue">mish.backlinks</span></span><span class="fl"><b>links</b>     <span class="c-lilac">mish.outlinks</span> · <span class="c-cyan">mish.music</span></span><span class="fl"><b>dates</b>     <span class="c-yellow">mish.calendar</span> · <span class="c-green">mish.localgraph</span></span><span class="fl"><b>palette</b>   <span class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span class="fl"><b>uptime</b>    since the first prompt</span></span></pre>
         <div class="rainbow-rule" aria-hidden="true"></div>
         <div class="prompt-line prompt-bottom">
-          <span class="ps-badge" aria-hidden="true">PS</span><span class="win-path">C:\Users\mishti\obsidian</span><span class="gt">&gt;</span><span class="typed">ls plugins</span><span class="caret" aria-hidden="true"></span>
+          <span class="prompt-chev">❯</span><span class="typed">ls plugins</span><span class="caret" aria-hidden="true"></span>
         </div>
         <p class="ls-out"><span class="c-pink">mish.home/</span>  <span class="c-peach">mish.eza/</span>  <span class="c-yellow">mish.fastfetch/</span>  <span class="c-green">mish.backlinks/</span>  <span class="c-blue">mish.outlinks/</span>  <span class="c-lilac">mish.music/</span>  <span class="c-cyan">mish.calendar/</span>  <span class="c-pink">mish.localgraph/</span></p>
       </div>
@@ -96,7 +93,7 @@
   <section class="suite" id="plugins">
     <div class="section-head">
       <div>
-        <p class="eyebrow"><span class="ps-inline">PS</span> <span class="gt">&gt;</span> ls ./plugins</p>
+        <p class="eyebrow"><span class="prompt-chev">❯</span> ls ./plugins</p>
         <h2>the suite</h2>
       </div>
       <p class="section-note">eight plugins, one theme, zero opinions about your vault.</p>
@@ -268,7 +265,7 @@
   <section class="install" id="install">
     <div class="section-head">
       <div>
-        <p class="eyebrow"><span class="ps-inline">PS</span> <span class="gt">&gt;</span> cat install.txt</p>
+        <p class="eyebrow"><span class="prompt-chev">❯</span> cat install.txt</p>
         <h2>install</h2>
       </div>
       <p class="section-note">community plugins, or a clone and a reload. no build step, no package manager.</p>
@@ -294,17 +291,16 @@
 
     <div class="shell-card">
       <div class="shell-head">
-        <span class="term-tab is-active"><span class="ps-badge tiny" aria-hidden="true">PS</span> Windows PowerShell</span>
-        <span class="term-tab">mish.suite</span>
-        <span class="window-dim">— ▢ ✕</span>
+        <span class="traffic small" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>mish shell — try it</span>
         <button class="shell-clear" id="shell-clear" type="button">clear</button>
       </div>
-      <div class="shell-body" id="shell" tabindex="0" role="log" aria-label="interactive powershell" aria-live="polite">
-        <div class="shell-line"><span class="ps-inline">PS</span> <span class="gt">&gt;</span> <span class="muted">type <b>get-help</b> and press enter. tab completes. up and down remember.</span></div>
+      <div class="shell-body" id="shell" tabindex="0" role="log" aria-label="interactive mish shell" aria-live="polite">
+        <div class="shell-line"><span class="prompt-chev">❯</span><span class="muted">type <b>help</b> and press enter. tab completes. up and down remember.</span></div>
       </div>
       <form class="shell-form" id="shell-form" autocomplete="off">
-        <label class="shell-prompt" for="shell-input"><span class="ps-badge tiny" aria-hidden="true">PS</span><span class="win-path">C:\Users\mishti\obsidian</span><span class="gt">&gt;</span></label>
-        <input id="shell-input" name="command" type="text" spellcheck="false" autocapitalize="off" aria-label="powershell command">
+        <label class="shell-prompt" for="shell-input"><span class="seg seg-user">mishti</span><span class="seg seg-path">~/obsidian</span><span class="prompt-chev">❯</span></label>
+        <input id="shell-input" name="command" type="text" spellcheck="false" autocapitalize="off" aria-label="shell command">
         <span class="shell-caret" aria-hidden="true"></span>
       </form>
     </div>
@@ -313,7 +309,7 @@
   <section class="palette-section" aria-labelledby="palette-heading">
     <div class="section-head">
       <div>
-        <p class="eyebrow"><span class="ps-inline">PS</span> <span class="gt">&gt;</span> palette --show</p>
+        <p class="eyebrow"><span class="prompt-chev">❯</span> palette --show</p>
         <h2 id="palette-heading">the palette</h2>
       </div>
       <p class="section-note">six pastels, mixed in oklab so the rainbow never goes dull in the middle.</p>
@@ -332,7 +328,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-prompt">
-      <span class="ps-badge" aria-hidden="true">PS</span><span class="win-path">C:\Users\mishti\obsidian</span><span class="gt">&gt;</span><span class="caret" aria-hidden="true"></span>
+      <span class="seg seg-user">mishti</span><span class="seg seg-path">~/obsidian</span><span class="prompt-chev">❯</span><span class="caret" aria-hidden="true"></span>
     </div>
     <p>made by <a href="https://github.com/mishtiiikrishnaa" target="_blank" rel="noopener">mishti</a>. theme and plugins are mit licensed. this page is static, local and unbothered by analytics.</p>
     <div class="footer-links">

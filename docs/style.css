@@ -271,7 +271,7 @@ p { margin: 0 0 16px; }
 }
 .hero-stats div { padding: 0 24px 0 0; margin-right: 24px; border-right: 1px solid var(--line); }
 .hero-stats div:last-child { border-right: 0; padding-right: 0; margin-right: 0; }
-.hero-stats dt { color: var(--faint); font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase; }
+.hero-stats dt { color: var(--faint); font-size: 10px; letter-spacing: 0.05em; }
 .hero-stats dd { margin: 2px 0 0; color: var(--fg); font-size: 22px; font-weight: 700; line-height: 1.2; }
 
 /* ── hero window ────────────────────────────────────────────────────── */
@@ -409,7 +409,7 @@ p { margin: 0 0 16px; }
 .card:target,
 .card.is-target { border-color: var(--c); box-shadow: 0 0 0 1px var(--c); }
 .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.kind { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c); }
+.kind { font-size: 10px; letter-spacing: 0.08em; color: var(--c); }
 .version { font-size: 10px; color: var(--faint); }
 .card h3 a { color: var(--fg); text-decoration: none; }
 .card h3 a:hover { color: var(--c); }
